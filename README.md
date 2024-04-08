@@ -1,11 +1,9 @@
 # Asar
 [![Windows builds (AppVeyor)](https://ci.appveyor.com/api/projects/status/github/RPGHacker/asar?svg=true)](https://ci.appveyor.com/project/RPGHacker/asar) ![Ubuntu build (GitHub Actions)](https://github.com/RPGHacker/asar/actions/workflows/cmake.yml/badge.svg)
 
-[Read the documentation and user manual](https://rpghacker.github.io/asar/manual/)
-
 Asar is an SNES assembler designed for applying patches to existing ROM images, or creating new ROM images from scratch. It supports 65c816, SPC700, and Super FX architectures. It was originally created by Alcaro, modelled after [xkas v0.06](https://www.romhacking.net/utilities/269/) by byuu.
 
-For a guide on using Asar (including how to write patches), see [`README.txt`](https://github.com/RPGHacker/asar/blob/master/README.txt). This readme was made with tool programmers and contributors in mind.
+For a guide on using Asar (including how to write patches), see [`README.txt`](https://github.com/RPGHacker/asar/blob/master/README.txt). A version of the user manual can also be found [online](https://rpghacker.github.io/asar/manual/). This readme was made with tool programmers and contributors in mind.
 
 ## Building
 You can build Asar with [CMake](https://cmake.org). On Linux, the most basic build would look like `cmake src && make`. On Windows, using Visual Studio, you would do `cmake src`, then open the project file it generates in Visual Studio and click Build. Alternately, you might be able to use Visual Studio's [CMake integration](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio).
