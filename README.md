@@ -1,7 +1,7 @@
 # Asar
 [![Windows builds (AppVeyor)](https://ci.appveyor.com/api/projects/status/github/RPGHacker/asar?svg=true)](https://ci.appveyor.com/project/RPGHacker/asar) ![Ubuntu build (GitHub Actions)](https://github.com/RPGHacker/asar/actions/workflows/cmake.yml/badge.svg)
 
-![Read the documentation and user manual](https://rpghacker.github.io/asar/manual/)
+[Read the documentation and user manual](https://rpghacker.github.io/asar/manual/)
 
 Asar is an SNES assembler designed for applying patches to existing ROM images, or creating new ROM images from scratch. It supports 65c816, SPC700, and Super FX architectures. It was originally created by Alcaro, modelled after [xkas v0.06](https://www.romhacking.net/utilities/269/) by byuu.
 
