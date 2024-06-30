@@ -48,6 +48,10 @@ cmake_install.cmake
 Project.sln
 CMakeCache.txt
 
+# Linux builds
+Makefile
+build/
+
 # Test folders
 tests_tmp_dll/
 tests_tmp_app/
