@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Assemble SMW",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/asar/bin/asar",
+            "args": [
+                "-D_VER=1",
+                "smw.asm",
+                "smw.smc"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/../SMWDisX",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart",
+        }
+    ]
+}

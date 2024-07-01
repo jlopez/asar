@@ -61,7 +61,6 @@ tests_tmp_app/
 bin/
 build/
 .cmake
-.vscode
 .cache
 
 __pycache__/
