@@ -494,7 +494,10 @@ int main(int argc, const char * argv[])
 		}
 		if (!openrom(romname, false))
 		{
+			#pragma GCC diagnostic push
+			#pragma GCC diagnostic ignored "-Wformat-security"
 			asar_throw_error(pass, error_type_null, openromerror);
+			#pragma GCC diagnostic pop
 			pause(err);
 			return 1;
 		}

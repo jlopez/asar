@@ -49,6 +49,9 @@ cmake_install.cmake
 Project.sln
 CMakeCache.txt
 
+# Build files on macOS
+Makefile
+
 # Test folders
 tests_tmp_dll/
 tests_tmp_app/
