@@ -7,10 +7,19 @@ option(ASAR_GEN_EXE "Build Asar standalone application" ON)
 option(ASAR_GEN_DLL "Build Asar shared library" ON)
 option(ASAR_GEN_LIB "Build Asar static library" ON)
 option(ASAR_COVERAGE "Build Asar with coverage tracking support" OFF)
-option(ASAR_USE_THREADS "Run Asar in a new thread to alleviate stack usage problems" ON)
 if (MSVC)
 	message(STATUS "In MSVC you can override MSVC_LIB_TYPE, valid values are D for dynamic and T for static")
 endif()
+
+# Determine default value based on the operating system
+if(APPLE)
+  set(ASAR_USE_THREADS_DEFAULT OFF)
+else()
+  set(ASAR_USE_THREADS_DEFAULT ON)
+endif()
+
+# Define the option with the determined default value
+option(ASAR_USE_THREADS "Run Asar in a new thread to alleviate stack usage problems" ${ASAR_USE_THREADS_DEFAULT})
 
 
 set (CMAKE_CXX_STANDARD 17)
